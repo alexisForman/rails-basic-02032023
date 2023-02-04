@@ -1,0 +1,10 @@
+<%# #This text was automatically created when we ran rails generate controller Books index %>
+<h1>Books#index</h1>
+<p>Find me in app/views/books/index.html.erb</p>
+
+<h1>List of Books</h1>
+
+<% @books.each do |book| %>
+    <h2 class="title"><%= book.title %></h2>
+    <p><%= book.summary %></p>
+<% end %>
